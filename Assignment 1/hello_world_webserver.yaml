@@ -1,0 +1,29 @@
+---
+- name: start webserver
+  hosts: webapps #replace with your server's address.
+  become: true
+  tasks:
+    - name: Copy files to remote host
+      copy:
+        src: dist/
+        dest: /var/www/html
+        owner: ec2-user
+        group: ec2-user
+        mode: 0755
+    - name: install apache
+      yum: 
+        name: httpd
+        state: latest
+    - name: start apache server
+      command: apachectl start
+  tags:
+    - start_web_server
+
+- name: end webserver
+  hosts: webapps #replace with your server's address.
+  become: true
+  tasks:
+    - name: kill apache server
+      command: killall httpd
+  tags:
+    - end_web_server
