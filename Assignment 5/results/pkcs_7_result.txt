@@ -1,0 +1,125 @@
+openssl pkcs7 \
+    -in ca/signing-ca-chain.p7c \
+    -inform der \
+    -noout \
+    -text \
+    -print_certs
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 2 (0x2)
+    Signature Algorithm: sha1WithRSAEncryption
+        Issuer: DC=org, DC=simple, O=Simple Inc, OU=Simple Root CA, CN=Simple Root CA
+        Validity
+            Not Before: May 23 09:18:01 2019 GMT
+            Not After : May 22 09:18:01 2029 GMT
+        Subject: DC=org, DC=simple, O=Simple Inc, OU=Simple Signing CA, CN=Simple Signing CA
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:b3:49:93:04:ff:f5:d6:83:ea:e8:95:db:6e:59:
+                    a3:e9:8e:2c:2f:c2:7a:cc:61:fb:8f:78:c4:95:2f:
+                    fe:90:30:62:e3:d4:c7:e1:b8:36:a0:1e:0d:f0:7d:
+                    d3:f1:e3:da:79:d3:42:c8:a9:81:20:f4:fd:73:ec:
+                    bd:2f:ad:80:29:bb:74:f8:3f:73:ef:2a:97:76:cb:
+                    07:01:c6:f5:f1:a6:d9:1f:6e:03:c8:92:93:ab:e6:
+                    98:1b:e7:38:22:bb:ff:b4:e2:cf:00:04:2a:a1:31:
+                    40:bf:45:2a:d7:13:1d:77:40:cc:4b:0d:22:51:08:
+                    0a:c3:8c:8f:ba:c5:21:32:ef:ac:ef:fc:69:34:ec:
+                    88:50:2d:e1:3d:0b:6c:66:ca:39:98:7d:95:8c:40:
+                    d1:d7:76:2b:ba:8c:30:66:f8:91:82:7d:13:5e:6c:
+                    09:77:9e:8a:e8:b5:3d:37:b7:1c:38:a2:05:35:b4:
+                    90:0d:cc:b9:34:b3:b9:5d:6e:bd:b7:c9:1b:a6:3c:
+                    58:ee:49:3d:b1:ec:b4:1b:d3:00:4c:83:f9:36:09:
+                    a4:cd:26:3e:bb:18:2e:60:dc:ae:3a:ee:59:b0:7a:
+                    09:d5:89:9b:ca:9b:75:df:f0:42:3a:6b:7f:58:e9:
+                    71:b4:e9:cb:60:fc:c8:42:4f:48:dd:63:c6:6b:49:
+                    4c:87
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            X509v3 Subject Key Identifier:
+                37:39:53:9B:4A:7C:64:F0:CC:E3:9B:E3:06:C8:39:D2:6D:1E:2F:EB
+            X509v3 Authority Key Identifier:
+                keyid:83:5E:2A:FD:64:9F:44:8B:A3:A6:3D:3C:3E:55:61:95:52:BC:41:BA
+
+    Signature Algorithm: sha1WithRSAEncryption
+         b3:81:02:6c:40:d7:4e:b8:83:c9:0c:9b:71:a5:21:a7:36:a5:
+         8d:a0:d5:f4:cb:eb:03:cb:2b:dd:a0:84:7a:5d:1d:8c:c5:c6:
+         7f:4f:d2:30:c2:0f:19:8f:f1:e1:00:66:5e:c5:79:dc:ce:05:
+         e6:82:95:40:a7:db:7c:8a:30:8f:d9:39:7a:8d:a1:39:7d:17:
+         c7:87:70:2e:22:6a:6f:4a:e9:82:33:78:75:0b:1c:ca:e9:21:
+         ba:20:c7:52:74:e0:12:a1:0b:2d:c7:da:05:11:b7:d9:62:86:
+         c3:10:ef:80:bb:15:1c:a8:2e:82:70:78:47:3c:89:ab:43:da:
+         d9:9d:8d:81:c6:59:13:e6:ce:db:37:51:8e:8f:58:d4:12:b1:
+         53:05:ac:3f:d0:bd:84:40:65:33:cb:ca:8d:9b:45:9d:a3:40:
+         32:4d:3f:f8:91:c5:6f:0e:5e:80:f3:8f:1c:34:99:ca:5a:3d:
+         a1:08:85:2c:a7:aa:18:d4:df:39:14:8b:c0:37:18:94:f4:ea:
+         cd:86:1b:96:ed:fc:06:21:65:00:df:d9:e3:fe:79:36:cb:4e:
+         ec:6c:bb:ec:7d:69:d5:51:14:af:6c:e5:9a:1f:ca:9c:8e:b3:
+         5e:b4:f8:75:81:83:f8:d3:95:6e:31:f2:86:14:58:f7:3d:be:
+         a2:6f:a2:e1
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 1 (0x1)
+    Signature Algorithm: sha1WithRSAEncryption
+        Issuer: DC=org, DC=simple, O=Simple Inc, OU=Simple Root CA, CN=Simple Root CA
+        Validity
+            Not Before: May 23 09:17:07 2019 GMT
+            Not After : May 22 09:17:07 2029 GMT
+        Subject: DC=org, DC=simple, O=Simple Inc, OU=Simple Root CA, CN=Simple Root CA
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:b6:5e:d7:31:83:d5:7c:3a:a6:f6:1e:d7:38:38:
+                    8a:de:c4:0f:dc:bf:b6:5d:2f:6d:dc:af:51:b0:b1:
+                    a1:8a:4f:b6:ce:f8:a6:d9:9d:0d:d2:d6:36:a7:1f:
+                    84:2a:1d:0e:0e:d1:ef:a4:31:41:a9:76:71:e4:dd:
+                    23:09:00:4c:da:09:5e:ba:f3:a2:0f:6b:bd:90:3a:
+                    7f:90:1e:b4:8d:d0:9e:a3:66:88:3e:b4:cf:c2:42:
+                    ed:59:0f:4e:44:a2:53:ab:7b:34:0b:01:0b:54:22:
+                    7a:da:1e:97:1d:94:ff:92:44:d3:ed:31:26:81:7c:
+                    45:80:51:2e:1a:6e:75:43:db:4c:66:eb:a9:82:07:
+                    e4:47:c0:4d:35:11:9e:c5:24:f2:e9:3f:70:24:8b:
+                    63:f1:aa:34:f9:27:e1:3d:f3:47:4c:76:71:82:de:
+                    64:a9:e3:7e:af:aa:85:c0:11:d3:32:52:6c:2b:f8:
+                    af:3a:f4:16:01:d8:40:9c:7b:e1:4b:16:22:32:ac:
+                    5b:ce:ba:78:86:3a:7c:82:b1:99:ae:ae:b6:38:58:
+                    0d:11:ed:a6:59:f7:6d:32:9f:17:14:86:08:b4:6b:
+                    d3:7b:e9:59:cb:1f:00:77:9e:2d:22:d0:c8:4d:b6:
+                    e9:b9:e7:04:0e:81:ba:87:41:c4:a8:d3:73:fb:ac:
+                    50:67
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Subject Key Identifier:
+                83:5E:2A:FD:64:9F:44:8B:A3:A6:3D:3C:3E:55:61:95:52:BC:41:BA
+            X509v3 Authority Key Identifier:
+                keyid:83:5E:2A:FD:64:9F:44:8B:A3:A6:3D:3C:3E:55:61:95:52:BC:41:BA
+
+    Signature Algorithm: sha1WithRSAEncryption
+         04:d0:32:55:d7:02:11:de:bf:d8:d1:45:fe:4d:a2:4d:44:38:
+         13:8a:97:00:97:c6:8f:3a:8f:84:a1:6c:7a:db:b9:6c:02:6e:
+         25:4b:53:99:9e:4a:71:70:77:09:05:7a:d1:d8:1f:8e:17:b4:
+         75:91:58:55:cd:81:5f:7a:6c:26:23:c2:f0:16:0d:8f:6f:f1:
+         e4:87:27:7d:a0:55:82:f8:70:ba:5d:26:83:76:bc:ab:ba:59:
+         84:4f:74:4c:01:42:ae:aa:b8:c3:2f:0e:86:68:a7:ac:b8:90:
+         f1:2c:94:a6:84:76:ba:84:e5:c6:41:c1:dd:e3:06:be:17:42:
+         76:e4:46:89:8c:07:14:f5:9f:5f:30:42:5a:94:b8:79:2e:d0:
+         90:2c:5b:b6:49:e6:1c:80:55:83:83:4c:bd:9d:15:64:48:82:
+         51:59:61:48:5c:e3:17:ff:32:82:45:18:6f:45:39:79:6f:22:
+         16:c9:1a:65:3b:2a:fd:69:05:f9:d3:e9:30:83:df:ed:af:08:
+         ca:c1:dd:67:05:28:ca:e6:5a:5d:04:fc:c7:65:d2:40:7e:4a:
+         9c:a7:45:f3:f6:43:5a:8b:64:02:e9:32:77:dd:ae:2e:c9:53:
+         f9:dc:d0:e0:f7:29:60:9c:b1:26:f5:70:72:97:e0:86:d3:c1:
+         76:1e:39:d3

@@ -1,0 +1,39 @@
+openssl crl \
+    -in crl/signing-ca.crl \
+    -inform der \
+    -noout \
+    -text
+Certificate Revocation List (CRL):
+        Version 2 (0x1)
+    Signature Algorithm: sha1WithRSAEncryption
+        Issuer: /DC=org/DC=simple/O=Simple Inc/OU=Simple Signing CA/CN=Simple Signing CA
+        Last Update: May 23 09:22:22 2019 GMT
+        Next Update: May 30 09:22:22 2019 GMT
+        CRL extensions:
+            X509v3 Authority Key Identifier:
+                keyid:37:39:53:9B:4A:7C:64:F0:CC:E3:9B:E3:06:C8:39:D2:6D:1E:2F:EB
+
+            X509v3 CRL Number:
+                1
+Revoked Certificates:
+    Serial Number: 01
+        Revocation Date: May 23 09:22:08 2019 GMT
+        CRL entry extensions:
+            X509v3 CRL Reason Code:
+                Superseded
+    Signature Algorithm: sha1WithRSAEncryption
+         8b:8d:42:32:6a:a8:9f:2f:e8:fd:42:24:1e:31:13:2b:e3:0b:
+         a6:eb:38:b9:71:34:ae:3f:21:67:54:9c:11:40:d5:37:92:03:
+         a2:10:1b:be:49:fe:2e:82:18:a9:cf:cc:6a:5e:8d:f0:67:91:
+         bf:b7:ae:e3:0a:47:b0:d1:56:21:97:28:ca:52:f3:b5:18:ac:
+         e0:aa:67:b2:e1:9e:77:11:a3:51:1e:90:55:94:01:30:70:e5:
+         6e:5c:69:56:68:fc:30:96:2d:19:26:c7:76:d4:0a:2e:18:10:
+         ae:26:fa:26:8d:90:b5:cf:3b:1c:2c:9b:7c:00:1f:9b:56:e9:
+         e5:55:8b:39:c8:6f:96:c0:e2:7d:32:67:14:07:a1:b8:8f:b1:
+         38:6b:56:0b:6c:88:09:42:eb:75:9a:e9:d2:3e:cf:c3:13:6e:
+         f2:e9:19:1a:85:15:a3:6d:ac:1f:fa:75:f8:b3:43:76:1e:f8:
+         0c:df:a4:69:f8:db:b0:f2:ce:5c:d5:5e:f4:71:95:c0:82:d5:
+         58:cd:e7:4f:ff:a0:f0:01:49:39:ce:7c:ee:7a:66:8e:e6:f7:
+         8b:87:19:46:83:d1:d1:19:90:13:75:4a:40:4e:56:8f:f2:71:
+         75:67:a1:67:4b:dd:f3:60:c2:b7:0b:75:6c:a7:26:20:5c:96:
+         a9:6d:53:04

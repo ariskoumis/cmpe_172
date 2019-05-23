@@ -1,0 +1,57 @@
+openssl req \
+    -in certs/fred.csr \
+    -noout \
+    -text
+Certificate Request:
+    Data:
+        Version: 0 (0x0)
+        Subject: DC=org, DC=simple, O=Simple Inc, CN=Ari Koumis
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:b4:b4:92:03:72:3f:50:e5:24:18:87:c4:ce:9c:
+                    5e:62:56:3a:44:f8:2f:08:75:2e:da:4e:46:40:02:
+                    f0:72:e8:82:37:97:a1:4d:b4:df:8e:86:ed:2e:55:
+                    6c:40:0d:32:27:1e:fa:ec:a2:75:72:10:dd:99:e6:
+                    26:05:a6:73:9e:3a:e1:8e:8b:91:81:65:b8:f5:16:
+                    09:73:22:47:5c:c4:47:ac:14:70:09:ef:4f:75:91:
+                    39:3c:d4:b7:0b:f7:fa:8e:6e:e0:37:b6:70:06:85:
+                    7a:78:72:4a:52:7a:40:51:23:be:c9:da:46:57:0d:
+                    3c:b8:24:64:7b:9e:d0:72:5d:72:82:ac:d9:db:bd:
+                    23:56:6d:b6:98:b6:7d:a1:c8:e8:2c:b8:85:f7:db:
+                    32:9e:3b:02:a2:0b:e4:b4:01:b0:0f:90:bd:c9:f4:
+                    ec:6b:8f:ee:16:6b:89:0c:32:eb:b3:fd:ed:45:bf:
+                    66:d0:2a:b4:f0:f3:ca:55:27:26:01:34:c5:d0:bf:
+                    60:78:c0:74:2c:b4:c3:f0:ef:66:24:b4:98:57:69:
+                    43:6b:60:a5:1a:06:b4:47:82:d9:d2:0b:16:0f:43:
+                    61:00:64:19:99:2c:08:14:db:44:e5:a5:85:38:9e:
+                    05:5a:5f:ba:3f:47:15:44:85:50:3f:a0:ec:88:fe:
+                    f7:6b
+                Exponent: 65537 (0x10001)
+        Attributes:
+        Requested Extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Extended Key Usage:
+                E-mail Protection, TLS Web Client Authentication
+            X509v3 Subject Key Identifier:
+                C8:52:62:ED:FA:DB:01:28:4F:14:D2:FA:5F:78:70:16:DB:EB:80:A0
+            X509v3 Subject Alternative Name:
+                email:ariskoumis@gmail.com
+    Signature Algorithm: sha1WithRSAEncryption
+         97:c2:65:18:85:8e:2b:1c:3c:35:12:bb:4d:45:f9:36:cd:7f:
+         3d:89:6a:52:83:56:c0:19:7e:67:5d:db:13:8b:8d:d5:ca:d2:
+         b8:a8:01:7f:49:88:56:98:46:40:92:cd:34:55:a5:ed:fe:b2:
+         6d:85:68:10:7a:3e:c5:e6:2b:5b:6a:0f:2d:31:ba:55:bf:b7:
+         0b:ad:83:8c:18:e5:c4:57:2e:91:5d:84:6d:30:f3:50:69:53:
+         94:40:4b:1f:4a:41:93:9a:c1:fc:5d:53:85:ac:c9:09:6f:c5:
+         24:1b:78:0c:fd:af:ba:22:0f:8f:8e:94:7a:4c:29:5a:7e:fb:
+         57:eb:b7:37:07:be:9e:aa:bb:b0:91:bd:94:34:0f:19:8e:0e:
+         6e:7a:ae:b1:0f:74:c1:d5:46:06:ca:41:97:61:bc:f9:2f:3c:
+         70:1f:09:24:a2:8c:a2:e4:07:b1:14:7c:36:a1:d5:66:1b:06:
+         79:8b:e9:4b:b8:61:87:d9:4a:ed:21:58:d1:1b:fb:29:71:f8:
+         17:ee:48:80:b1:89:5d:3b:70:04:25:3e:73:2e:c1:3f:e1:e6:
+         a5:a8:d5:33:14:91:f5:13:d5:ed:80:e4:ae:89:b1:69:b1:94:
+         5c:11:2c:2e:9c:a0:6b:43:93:43:a5:de:6e:aa:ad:e3:ea:92:
+         2d:f6:d0:d2
